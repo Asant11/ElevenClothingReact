@@ -1,0 +1,23 @@
+.item-detail{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.item-detail-img{
+    height: 95vh;
+    margin:15px;
+}
+
+.item-detail-info{
+    color: lavenderblush;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+    margin-left: 60px;
+}
+
+.item-name{
+    font-size: 45px;
+}
+

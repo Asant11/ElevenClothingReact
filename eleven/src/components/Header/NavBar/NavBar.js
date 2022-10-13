@@ -1,20 +1,26 @@
-import CartWidget from '../CartWidget/CartWidget';
+import CartWidget from './CartWidget/CartWidget';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './NavBar.css';
+import{Link} from 'react-router-dom';
 
 function NavBar(){
-    const links=['Prendas', 'Talles', 'Contacto'];
+    // const links=['Hoodies', 'Shirts', 'Shorts'];
     return(
         <>
             <Navbar className="header"  expand="lg">
-            <Navbar.Brand className="navbar_brand"href="#home">ELEVEN CLOTHING</Navbar.Brand>
+            <Link to="/">
+                <Navbar.Brand className="navbar_brand"href="#">ELEVEN CLOTHING</Navbar.Brand>
+            </Link>
                 <Container className="container__header">
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                        {links.map((e, idx) => (<Nav.Link className='links' href="#" key={idx}>{e}</Nav.Link>))}
+                            <Link to="category/Hoodies" className='navbar__links'>Hoodies</Link>
+                            <Link to="category/Shirts" className='navbar__links'>Shirts</Link>
+                            <Link to="category/Shorts" className='navbar__links'>Shorts</Link>
+                        {/* {links.map((e, idx) => (<Nav.Link className='links' href="#" key={idx}>{e}</Nav.Link>))} */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

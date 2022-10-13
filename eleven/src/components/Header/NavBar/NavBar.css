@@ -18,8 +18,13 @@
     -webkit-text-fill-color: transparent;
 }
 
-.links{
+.navbar__links{
     color:lavenderblush;
+    text-decoration: none;
+    margin:0px 20px;
+}
+.navbar__links:hover{
+    color: rgb(202, 39, 17);
 }
 
 
