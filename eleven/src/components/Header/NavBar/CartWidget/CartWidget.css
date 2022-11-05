@@ -1,5 +1,16 @@
 .cartShopping{
     width:1.5rem;
     height: auto;
-    margin-right: 2rem;
+    margin-right:10px ;
+}
+
+.unitsCartDisplay{
+    display:none;
+}
+
+
+.divCart{
+    display: flex;
+    align-items: center;
+    color:lavenderblush;
 }

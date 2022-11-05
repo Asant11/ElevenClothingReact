@@ -21,3 +21,11 @@
     font-size: 45px;
 }
 
+.irAlCarrito{
+    color: lavenderblush;
+    font-size: 26px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(55, 56, 56);
+    text-decoration: none;
+}

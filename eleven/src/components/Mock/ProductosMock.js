@@ -36,7 +36,7 @@ export const Productos = [
         img:'https://res.cloudinary.com/dqyzq3oir/image/upload/v1665687108/ElevenClothing/Shirt_Tupac_l9syfz.jpg',
     },
     {
-        id:'5',
+        id:5,
         name:'Nike Short Black',
         price:100,
         stock:9,
@@ -45,7 +45,7 @@ export const Productos = [
         img:'https://res.cloudinary.com/dqyzq3oir/image/upload/v1665703261/ElevenClothing/ShortNikeNegro_yftcrf.jpg',
     },
     {
-        id:'6',
+        id:6,
         name:'Nike Short White',
         price:125,
         stock:8,

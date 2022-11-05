@@ -10,21 +10,22 @@ function NavBar(){
     return(
         <>
             <Navbar className="header"  expand="lg">
-            <Link to="/">
-                <Navbar.Brand className="navbar_brand"href="#">ELEVEN CLOTHING</Navbar.Brand>
-            </Link>
+                <Link to="/">
+                    <Navbar.Brand className="navbar_brand"href="#">ELEVEN CLOTHING</Navbar.Brand>
+                </Link>
                 <Container className="container__header">
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Link to="category/Hoodies" className='navbar__links'>Hoodies</Link>
-                            <Link to="category/Shirts" className='navbar__links'>Shirts</Link>
-                            <Link to="category/Shorts" className='navbar__links'>Shorts</Link>
-                        {/* {links.map((e, idx) => (<Nav.Link className='links' href="#" key={idx}>{e}</Nav.Link>))} */}
+                            <Link to="/category/Hoodies" className='navbar__links'>Hoodies</Link>
+                            <Link to="/category/Shirts" className='navbar__links'>Shirts</Link>
+                            <Link to="/category/Shorts" className='navbar__links'>Shorts</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
-                <CartWidget />
+                <Link className='navbar__links' to="/cart">
+                    <CartWidget />
+                </Link>
             </Navbar>
         </>
     )

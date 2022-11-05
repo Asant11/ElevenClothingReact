@@ -1,4 +1,18 @@
 .h2{
     margin:1.5em;
     color:lavenderblush;
+    display: block;
+}
+
+.loader{
+    color:lavenderblush;
+    display: block;
+}
+
+.divLoader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
 }
