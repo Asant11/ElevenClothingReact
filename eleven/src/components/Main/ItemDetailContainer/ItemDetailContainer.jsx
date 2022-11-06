@@ -1,8 +1,9 @@
 
 import ItemDetail from '../ItemDetail/ItemDetail';
-import { Productos } from '../../Mock/ProductosMock';
 import { useEffect, useState } from 'react';
-import {useParams} from 'react-router-dom'
+import {useParams} from 'react-router-dom';
+import {collection, doc, getDoc} from 'firebase/firestore';
+import {database} from '../../../services/FirebaseConfig';
 
 const ItemDetailContainer =() =>{
     
@@ -11,22 +12,20 @@ const ItemDetailContainer =() =>{
     const {id} = useParams();
 
     useEffect(()=>{
-        const traerProducto = () => {
-            return new Promise ((res,rej) =>{
-                const producto = Productos.find((prod)=>prod.id === Number(id))
-                setTimeout(() =>{
-                    res(producto);
-                }, 2000);              
-            });
-        };
-        traerProducto()
-            .then((res)=>{
-                setItem(res);
-            })
-            .catch((error)=>{
-                console.log(error);
-            })
-    })
+    
+        const collectionProd = collection (database, 'Products');
+        const ref = doc(collectionProd, id);
+        getDoc(ref)
+        .then((res)=>{
+            setItem({ 
+                id: res.id,
+                ...res.data()
+            });          
+        })
+        .catch((error)=>{
+            console.log(error);
+        })
+    }, [id]);
     return (
         <div>
             <ItemDetail item={item}></ItemDetail>     

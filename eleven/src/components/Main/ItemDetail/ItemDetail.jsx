@@ -13,7 +13,6 @@ const ItemDetail = ({item}) =>{
     const {addProductToCart} = useContext(CartContext);
 
     const addToCart = (cantidad) =>{
-        // console.log(`Agregaste ${cantidad} unidades al carrito!`);   /*SweetAlert*/
         setCantProductos(cantidad);
         addProductToCart(item, cantidad);
     };

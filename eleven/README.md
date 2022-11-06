@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# E-commerce de tienda de ropa
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](public/ElevenCaptura.png)
 
-## Available Scripts
+Este proyecto se basa principalmente en la experiencia de completar una compra a través de internet. Se podrá mirar los productos disponibles, filtrarlos opcionalmente, agregarlos al carrito y finalizar la compra con los datos del comprador y su respectivo codigo de envío.
 
-In the project directory, you can run:
+## Librerias utiizadas
 
-### `npm start`
+- [Firebase](https://firebase.google.com/)
+    ( Utilizada para almacenar los datos sobre los productos disponibles de la tienda, y a través de estos poder renderizarlos en el DOM.)
+- [React Spinners](https://www.npmjs.com/package/react-spinners) (Esta libreria incluye varios modelos de loaders para mejorar la experiencia de usuario, y que este pueda ver que su acción está siendo ejecutada)
+- [React-Router-DOM](https://reactrouter.com/en/main) (A través de esta libreria, se logra un dinamismo dentro de la página para poder navegar de manera rápida, y sin tener que aguardar a los tiempos de carga y actualización del sitio.)
+- [React Bootstrap](https://react-bootstrap.github.io/) (Esta libreria influye principalmente en la estética del sitio, brindando diferentes estilos de componentes completamente personalizables y simples de utilizar)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidades del proyecto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- El usuario puede visualizar los productos en el home rápidamente, con su respectiva descripción.
 
-### `npm test`
+- En la barra de navegación, dispone de las categorías en las que los productos se dividen, para poder filtrar según su interés.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- En caso de que esté interesado, dispone de un botón para poder acceder al detalle del producto.
 
-### `npm run build`
+- A través de un contador, el usuario puede seleccionar la cantidad de cada producto, y añadirlo al carrito.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Una vez que quiera finalizar su compra, podrá acceder al carrito de compras desde el mismo detalle del producto, o bien a través del icono ubicado en la barra de navegación.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Dentro del carrito podrá eliminar el producto seleccionado, en caso de un error, o limpiar directamente todos los productos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Si es que accedió al carrito por error, tendrá un botón para poder volver al home y continuar con su compra rápidamente.
 
-### `npm run eject`
+- Si decide seguir con la compra, podrá acceder al checkout, donde deberá completar los campos con sus datos para poder recibir un ID único correspondiente a su pedido.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Pasos para correr el proyecto de manera local
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clonar el repositorio a través del link
 
-## Learn More
+```
+git clone https://github.com/Asant11/ElevenClothingReact.git
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. A través de un editor de código, abrir el proyecto e instalar las dependencias correspondientes mediante la consola.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm install
+```
+3. Correr el proyecto
 
-### Code Splitting
+```
+npm start
+```
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -66,7 +66,7 @@ const Provider = ({children}) => {
         return acc;
     }
 
-    console.log(cart);
+    
     //funciones y estados
     
     return(

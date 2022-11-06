@@ -1,2 +1,22 @@
+.h3Total {
+    color:lavenderblush;
+}
 
+.h2Empty{
+    color:lavenderblush;
+}
 
+.buttonsContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.emptyCartContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}

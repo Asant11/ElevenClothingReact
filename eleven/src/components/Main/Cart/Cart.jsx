@@ -9,10 +9,10 @@ const Cart = () => {
 
     if(cart.length===0){
         return(
-            <div>
-                <h2>Aún no hay nada en el carrito!</h2>
+            <div className="emptyCartContainer">
+                <h2 className="h2Empty">Aún no hay nada en el carrito!</h2>
                 <Link to='/'>
-                    <button>Volvé y seleccioná los productos que quieras comprar.</button>
+                    <button>Volvé y seleccioná los productos que quieras comprar</button>
                 </Link>
             </div>
         )
@@ -25,8 +25,13 @@ const Cart = () => {
                     <CartDetail prod={prod}/>
                 ))
             }
-            <h3>Total: {totalPrice()}</h3>
-            <button onClick={deleteAllCart}>Limpiar el Carrito</button>
+            <h3 className="h3Total">Total: $ {totalPrice()}</h3>
+            <div className="buttonsContainer">
+                <button onClick={deleteAllCart}>Limpiar el Carrito</button>
+                <Link to='/checkout'>
+                    <button>Checkout</button>
+                </Link>
+            </div>
         </div>
     )
 }

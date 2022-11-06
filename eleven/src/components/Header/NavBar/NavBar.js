@@ -6,7 +6,6 @@ import './NavBar.css';
 import{Link} from 'react-router-dom';
 
 function NavBar(){
-    // const links=['Hoodies', 'Shirts', 'Shorts'];
     return(
         <>
             <Navbar className="header"  expand="lg">
