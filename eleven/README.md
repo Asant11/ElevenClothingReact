@@ -50,5 +50,14 @@ npm install
 ```
 npm start
 ```
+
+### Ver proyecto online
+
+    Para ver el proyecto funcionando, colocar el siguiente link en el navegador:
+
+```
+eleven-clothing-santisi.netlify.app
+```
 ---
+
 
